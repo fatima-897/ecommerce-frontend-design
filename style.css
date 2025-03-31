@@ -325,9 +325,6 @@ body {
   position: relative;
   padding-right: 15px;
 }
-.block-items-seconed-group{
-
-}
 .block-items-group-text{
 position: absolute;
 top: 8px;
@@ -386,6 +383,33 @@ font-weight: 500;
   border-radius: 5px;
   font-weight: 500;
   }
+  /* ---------------------------- */
+/* COUNTRY*/
+/* ---------------------------- */
+#country{
+  margin-top: 15px;
+  display: flex;
+}
+.supplier-flag{
+  display: flex;
+  margin-right: 38px;
+}
+.supplier-flag p{
+  display: flex;
+  margin-bottom: -4px;
+}
+.supplier-flag small{
+  color: #8b96a5;
+}
+.supplier-flag img{
+  height: 30px;
+  width: 40px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+/* .supplier-flag p,small{
+  padding-left: 50px;
+} */
 /* ---------------------------- */
 /* NEWSLETTER */
 /* ---------------------------- */
