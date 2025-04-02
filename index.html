@@ -393,20 +393,42 @@
 
 <!-- SECTION SUPPLIERS -->
 <div id="suppliers" class="section">
-    <div class="container">
-        <div class="row">
-            <img src="./img/supplier-bg.jpg" alt="">
-            <div class="col-6"></div>
-            <div class="col-6"></div>
+    <div class="container position-relative">
+        <div class="gradient-overlay"></div> 
+        <img class="suppliers-bg" src="./img/supplier-bg.jpg" alt="Background Image"> 
+        <div class="container"> 
+        <div class="row position-relative index">
+            <div class="col-6 text-white">
+                <h2>An easy way to send <br> requests to all suppliers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="col-6 bg-white p-4 rounded shadow">
+                <h4>Send quote to suppliers</h4>
+                <input type="text" class="form-control" placeholder="What item you need?">
+                <textarea class="form-control mt-2" placeholder="Type more details"></textarea>
+                <div class="d-flex mt-2">
+                    <select class="form-control me-2 ">
+                       <option>Quantity</option>
+                    </select>
+                    <select class="form-control">
+                        <option value="pcs">Pcs</option>
+                        <option value="bx">Bx</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary mt-3 w-20">Send Inquiry</button>
+            </div>
+        </div>
         </div>
     </div>
- </div>
-<!-- /SECTION SERVICE -->
+</div>
+
+<!-- /SECTION SUPPLIERS -->
 
 <!-- SECTION RECOMMEND -->
  <div id="recommendation" class="section">
     <div class="container">
         <div class="row">
+            <h4 style="font-weight: 600;">Recommended items</h4>
         </div>
     </div>
  </div>
