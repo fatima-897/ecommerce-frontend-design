@@ -243,6 +243,7 @@
 
 #breadcrumb {
     background: #FBFBFC;
+    margin-bottom: 15px;
   }
   
   #breadcrumb .breadcrumb-header {
@@ -281,7 +282,111 @@
   #breadcrumb .breadcrumb-tree li a:hover {
     color: #000;
   }
-  
+/*----------------------------*\
+	Aside col-3 
+\*----------------------------*/
+  /* GENERAL SIDEBAR STYLING */
+#aside {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.aside {
+    border-top: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+/* SECTION TITLES */
+.aside-title {
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.aside-title i {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* CATEGORY & FEATURE LINKS */
+.product-category ul,
+.checkbox-filter {
+    list-style: none;
+    padding-left: 0;
+}
+
+.product-category ul li,
+.input-checkbox {
+    margin-bottom: 12px;
+}
+
+.product-category a,
+.checkbox-filter label,
+.price-filter input {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.product-category a:hover,
+.checkbox-filter label:hover {
+    color: #007bff;
+}
+
+/* CHECKBOX STYLING */
+.input-checkbox input[type="checkbox"],
+.input-checkbox input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #007bff;
+}
+
+/* RADIO BUTTON STYLING */
+.input-checkbox input[type="radio"] {
+    transform: scale(1.1);
+}
+
+/* SEE ALL LINK */
+.see-more a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* PRICE RANGE */
+.price-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-number input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* STARS */
+.checked {
+    color: #ffc107;
+}
+
+/* BUTTON */
+.price-filter button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+
 /* -- bottom footer -- */
 #bottom-footer{
     background-color:#F7FAFC;
