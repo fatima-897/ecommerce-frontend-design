@@ -218,12 +218,20 @@
                         <div class="aside">
                             <h6 class="aside-title">Price range  <span><i class="fa-solid fa-angle-up"></i></span></h6>
                             <div class="price-filter">
-                                <div id="price-slider"></div>
-                                <div class="input-number price-min">
-                                    <input id="price-min" type="number" placeholder="Min">
-                                </div>
-                                <div class="input-number price-max">
-                                    <input id="price-max" type="number" placeholder="Max">
+                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                <div class="min-max-input">
+                                    <div class="input-number price-min">
+                                        <div>
+                                           <label for="minInput">Min</label><br>
+                                           <input type="number" id="minInput" placeholder="Min" value="0">
+                                         </div>
+                                    </div>
+                                    <div class="input-number price-max">
+                                        <div>
+                                        <label for="maxInput">Max</label><br>
+                                        <input type="number" id="maxInput" placeholder="Max" value="999999">
+                                       </div>
+                                    </div>
                                 </div>
                                 <button class="btn btn-light text-primary" type="button">Apply</button>
                             </div>
@@ -301,10 +309,230 @@
         
                     </div>
                     <!-- /ASIDE -->
+                       <!-- STORE -->
+                       <div id="aside" class="col-md-9">
+                        <!-- store top filter -->
+                        <div class="store-filter clearfix">
+                            <div class="store-sort pt-2">
+                                <p>12,911 items in<span class="fw-bold"> Mobile accessory</span></p>
+                            </div>
+                            <div class="store-right">
+                                <ul class="store-grid">
+                                    <div class="pt-2" id="store-grid-box-gap">
+                                        <input type="checkbox" id="Verified-only">
+                                        <label for="Verified-only">&nbsp; Verified only</label>
+                                    </div>
+                                    <div class="store-grid-box-gap">
+                                        <button type="button" class="btn d-flex align-items-center gap-5 border">
+                                            Featured <i class="fa-solid fa-chevron-down ms-1"></i>
+                                        </button>
+                                    </div>
+                                    <li class="active">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                                            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"/>
+                                          </svg>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- store products -->
+						<div class="row">
+							<!-- product -->
+                                <div class="product">
+                                    <div class="product-card">
+                                        <img src="./img/tech/1.png" alt="Product Image" class="product-image">
+                                        <div class="product-details">
+                                            <h6 class="product-title">Canon Cmera EOS 2000, Black 10x zoom</h6>
+                                            <div class="price">$998.00 <span class="old-price">$1128.00</span></div>
+                                            <div class="ratings"> 
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9734;</span>
+                                                <span class="star">&nbsp; 7.5</span>
+                                                <i class="fa-solid fa-circle"></i>
+                                                <span class="order-rext"> 154 orders</span>
+                                                <i class="fa-solid fa-circle"></i>
+                                                <span style="color: #02a502;"> Free Shipping</span>
+                                            </div>
+                                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                            <a href="#" class="view-details">View details</a>
+                                        </div>
+                                        <div class="wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- /product --> 
+
+                             	<!-- product -->
+                                 <div class="product">
+                                    <div class="product-card">
+                                        <img src="./img/tech/3.png" alt="Product Image" class="product-image">
+                                        <div class="product-details">
+                                            <h6 class="product-title">GoPro HERO6 4K Action Camera - Black</h6>
+                                            <div class="price">$998.00</div>
+                                            <div class="ratings"> 
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9733;</span>
+                                                <span class="star">&#9734;</span>
+                                                <span class="star">&nbsp; 7.5</span>
+                                                <i class="fa-solid fa-circle"></i>
+                                                <span class="order-rext"> 154 orders</span>
+                                                <i class="fa-solid fa-circle"></i>
+                                                <span style="color: #02a502;"> Free Shipping</span>
+                                            </div>
+                                            <p class="description">Ut enim aad minim veniam, quis nostrud exercitataion ullamco laboris nisi  ut aliquip ex ea commodo consequat. Duis aute irure dolor in rephrehenderit</p>
+                                            <a href="#" class="view-details">View details</a>
+                                        </div>
+                                        <div class="wishlist">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- /product --> 
+
+                            <!-- product -->
+                            <div class="product">
+                                <div class="product-card">
+                                    <img src="./img/tech/2.png" alt="Product Image" class="product-image">
+                                    <div class="product-details">
+                                        <h6 class="product-title">GoPro HERO6 4K Action Camera - Black</h6>
+                                        <div class="price">$998.00</div>
+                                        <div class="ratings"> 
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9733;</span>
+                                            <span class="star">&#9734;</span>
+                                            <span class="star">&nbsp; 7.5</span>
+                                            <i class="fa-solid fa-circle"></i>
+                                            <span class="order-rext"> 154 orders</span>
+                                            <i class="fa-solid fa-circle"></i>
+                                            <span style="color: #02a502;"> Free Shipping</span>
+                                        </div>
+                                        <p class="description">Ut enim aad minim veniam, quis nostrud exercitataion ullamco laboris nisi  ut aliquip ex ea commodo consequat. Duis aute irure dolor in rephrehenderit</p>
+                                        <a href="#" class="view-details">View details</a>
+                                    </div>
+                                    <div class="wishlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- /product -->
+
+                         <!-- product -->
+                         <div class="product">
+                            <div class="product-card">
+                                <img src="./img/tech/7.png" alt="Product Image" class="product-image">
+                                <div class="product-details">
+                                    <h6 class="product-title">GoPro HERO6 4K Action Camera - Black</h6>
+                                    <div class="price">$998.00</div>
+                                    <div class="ratings"> 
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9733;</span>
+                                        <span class="star">&#9734;</span>
+                                        <span class="star">&nbsp; 7.5</span>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <span class="order-rext"> 154 orders</span>
+                                        <i class="fa-solid fa-circle"></i>
+                                        <span style="color: #02a502;"> Free Shipping</span>
+                                    </div>
+                                    <p class="description">Ut enim aad minim veniam, quis nostrud exercitataion ullamco laboris nisi  ut aliquip ex ea commodo consequat. Duis aute irure dolor in rephrehenderit</p>
+                                    <a href="#" class="view-details">View details</a>
+                                </div>
+                                <div class="wishlist">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- /product --> 
+
+                    <!-- product -->
+                    <div class="product">
+                        <div class="product-card">
+                            <img src="./img/tech/8.png" alt="Product Image" class="product-image">
+                            <div class="product-details">
+                                <h6 class="product-title">GoPro HERO6 4K Action Camera - Black</h6>
+                                <div class="price">$998.00</div>
+                                <div class="ratings"> 
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <span class="star">&nbsp; 7.5</span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span class="order-rext"> 154 orders</span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span style="color: #02a502;"> Free Shipping</span>
+                                </div>
+                                <p class="description">Ut enim aad minim veniam, quis nostrud exercitataion ullamco laboris nisi  ut aliquip ex ea commodo consequat. Duis aute irure dolor in rephrehenderit</p>
+                                <a href="#" class="view-details">View details</a>
+                            </div>
+                            <div class="wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                <!-- /product --> 
+
+                <!-- product -->
+                <div class="product">
+                    <div class="product-card">
+                        <img src="./img/tech/9.png" alt="Product Image" class="product-image">
+                        <div class="product-details">
+                            <h6 class="product-title">GoPro HERO6 4K Action Camera - Black</h6>
+                            <div class="price">$998.00</div>
+                            <div class="ratings"> 
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                                <span class="star">&nbsp; 7.5</span>
+                                <i class="fa-solid fa-circle"></i>
+                                <span class="order-rext"> 154 orders</span>
+                                <i class="fa-solid fa-circle"></i>
+                                <span style="color: #02a502;"> Free Shipping</span>
+                            </div>
+                            <p class="description">Ut enim aad minim veniam, quis nostrud exercitataion ullamco laboris nisi  ut aliquip ex ea commodo consequat. Duis aute irure dolor in rephrehenderit</p>
+                            <a href="#" class="view-details">View details</a>
+                        </div>
+                        <div class="wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        </div>
+                    </div>
                 </div>
+            <!-- /product --> 
+            
+                      </div>
+                 <!-- /STORE -->
+                </div>
+                 <!-- store bottom filter -->
+                 <div class="store-bottom-filter">
+                    <button type="button" class="show-btn">
+                        Show 10 <i class="fa-solid fa-chevron-down ms-1"></i>
+                    </button>
+                    <ul class="store-pagination">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="active border">1</li>
+                        <li class="border"><a href="#">2</a></li>
+                        <li class="border"><a href="#">3</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+				<!-- /store bottom filter -->
             </div>
         </div>
-        
     </div> 
     <!-- SECTION NEWSLETTER -->
     <div id="newsletter" class="section">

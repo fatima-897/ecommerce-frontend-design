@@ -365,12 +365,16 @@
 }
 
 .input-number input {
-    width: 100%;
+    width: 90%;
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+.min-max-input {
+    display: flex;
+    justify-content: space-evenly;
+}
 /* STARS */
 .checked {
     color: #ffc107;
@@ -385,8 +389,206 @@
     border: 1px solid #ccc;
     background-color: #fff;
 }
+/*----------------------------*\
+    Store
+\*----------------------------*/
 
+.store-filter {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+}
 
+/*-- Store Sort --*/
+.store-sort {
+    display: flex;
+}
+
+/*-- Store Grid --*/
+.store-grid {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    padding: 0;
+}
+
+.store-grid-box-gap {
+    margin: 0 10px;
+}
+
+.store-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    justify-content: flex-end; 
+}
+
+.store-grid li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FFF;
+    border: 1px solid #E4E7ED;
+    text-align: center;
+}
+
+.store-grid li i {
+    color: black; 
+}
+
+.store-grid li+li {
+    margin-left: 5px;
+}
+
+.store-grid li.active {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+    cursor: default;
+}
+
+.store-grid li a {
+    display: block;
+}
+/*-- Store Pagination --*/
+.store-bottom-filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align to the right */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.store-pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+    display: flex; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.store-pagination li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FFF;
+    transition: 0.2s all;
+}
+
+.store-pagination li:first-child {
+    margin-left: 0; 
+}
+
+.store-pagination li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.store-pagination li.active {
+    background-color: #e9ecef;
+}
+
+.store-pagination li:hover {
+    background-color: #f0f0f0;
+}
+
+.show-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    gap:  10px;
+}
+
+  
+/*----------------------------*\
+    Store
+\*----------------------------*/
+.product-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.product-image {
+    margin: 0 20px 0 0;
+    height: 180px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.old-price {
+    font-size: 0.9em;
+    text-decoration: line-through;
+    color: #B9BABC;
+    margin-left: 5px;
+}
+
+.ratings {
+    margin-bottom: 5px;
+}
+
+.ratings .star {
+    color: #ffc107;
+}
+
+.ratings i{
+    color: #cccccc;
+    font-size: 5px;
+    padding: 5px;
+}
+
+.order-rext {
+    color: #B9BABC;
+}
+.description {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.view-details {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.wishlist {
+    align-self: flex-start;
+    margin-left: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    color: #007bff;
+}
 /* -- bottom footer -- */
 #bottom-footer{
     background-color:#F7FAFC;
