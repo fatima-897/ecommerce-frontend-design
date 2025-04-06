@@ -456,59 +456,93 @@
 .store-grid li a {
     display: block;
 }
+
+
+/*-- Store Filter bottom --*/
+
+.filter-grid-boxes{
+  display: flex;
+  gap: 5px;
+}
+
+.filter-btn {
+  background-color: white;
+  color: #6c757d;
+  border: 1px solid #0d6efd;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #e7f1ff77; 
+}
+
+.filter-grid-box-gap i {
+  font-size: 12px; 
+  margin-left: 5px; 
+}
+
+
+
 /*-- Store Pagination --*/
 .store-bottom-filter {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; 
-    padding: 20px;
-    background-color: #f8f9fa; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 20px;
+  background-color: #f8f9fa; 
 }
 
 .store-pagination {
-    list-style: none;
-    padding: 0;
-    margin: 0 10px;
-    display: flex; 
-    border: 1px solid #ccc;
-    border-radius: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+  display: flex; 
+  border: 1px solid #ccc;
+  border-radius: 7px;
 }
 
 .store-pagination li {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #FFF;
-    transition: 0.2s all;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #FFF;
+  transition: 0.2s all;
 }
 
 .store-pagination li:first-child {
-    margin-left: 0; 
+  margin-left: 0; 
 }
 
 .store-pagination li a {
-    display: block;
-    color: #000;
-    text-decoration: none;
+  display: block;
+  color: #000;
+  text-decoration: none;
 }
 
 .store-pagination li.active {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 
 .store-pagination li:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .show-btn {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    background-color: white;
-    border-radius: 5px;
-    padding: 8px 15px;
-    gap:  10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  gap:  10px;
 }
 
   
