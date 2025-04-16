@@ -212,10 +212,12 @@
 /*---------------------------------*\
   Product Details and image content
 \*--------------------------------*/
-
-/* #product-content{
-  
-} */
+/*---------------------------------*\
+  Product image content
+\*--------------------------------*/
+#mainImage{
+  width: 100%;
+}
 .product-content-border{
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -292,15 +294,65 @@ gap: 5px;
 font-size: 1rem;
 font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
+/* ----------------------------- */
+/* ---- product-details ------- */
+/* ----------------------------- */
+.product-details{
+  padding: 15px;
+}
+.in-stock{
+  color: #00B517;
+}
+.p-detail-title{
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.price-range{
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #FFF0DF;
+  display: flex;
+}
+.price-range p{
+  margin-bottom: 0;
+  opacity: 75%;
+  font-size: small;
+}
+.p-range-left{
+  width: 100px;
+  padding-left: 10px;
+}
+.p-range-right{
+  width: 100px;
+  padding-left: 10px;
+}
+.p-range-center{
+  border-inline: 1px solid #ddd;
+  padding-left: 10px;
+  width: 110px;
+}
+/* ----------------------------- */
+/* ---- product-details ------- */
+/* ----------------------------- */
+.detail-table{
+  padding: 15px 0 0;
+}
+.detail-box{
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 0;
+}
+.option{
+  width: 130px;
+  color: #8D99AE;
+}
+.option-detail{
+  opacity: 90%;
+}
+.detail-box-two{
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 0;
+}
   
 /* ---------------------------- */
 /* FOOTER */
