@@ -217,6 +217,18 @@
 \*--------------------------------*/
 #mainImage{
   width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.product-thumbnails{
+  padding: 15px 0;
+}
+.product-thumbnails img {
+  width: 13%;
+  height: 55px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0;
 }
 .product-content-border{
   border: 1px solid #ddd;
