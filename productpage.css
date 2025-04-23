@@ -372,10 +372,12 @@ font-weight: 500;
 /* ---------------------------- */
 
 .product-description {
-  border: 2px solid #ddd;
+  border: 1px solid #ddd;
+  box-shadow: #dddd9d;
   border-radius: 7px;
   background-color: #FFF;
-  padding: 0;
+  padding: 0 0 20px;
+  margin: 0 10px;
 }
 
 .tab-nav{
@@ -402,25 +404,25 @@ font-weight: 500;
   flex-direction: column;
   margin-bottom: 20px;
   width: 50%;
-  border: 1px solid #ddd;
 }
 
 .spec-row {
   display: flex;
-  justify-content: flex-start;
-  padding: 8px 0;
-  border-bottom: 1px solid #f0f0f0;
 }
 
 .spec-key {
   width: 150px;
-  padding-left: 10px;
-  color: #333;
+  padding: 5px 8px;
+  color: #333333c4;
+  background-color: #ecedf08a;
+  border: 1px solid #ddd;
 }
 
 .spec-value {
   flex-grow: 1;
   color: #555;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
 }
 
 .product-features {
@@ -436,6 +438,10 @@ font-weight: 500;
   background-color: #FFF;
 }
 
+.you-may-like h6{
+font-weight: bold;
+}
+
 .suggestion-item {
   display: flex;
   align-items: center;
@@ -447,10 +453,12 @@ font-weight: 500;
   height: 60px;
   object-fit: cover;
   margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .suggestion-details {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .suggestion-price {
@@ -458,7 +466,78 @@ font-weight: 500;
 }
 
 
+/* ---------------------------- */
+/*  Related Product */
+/* ---------------------------- */
 
+.product-related-border{
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.product-related-border h4{
+  font-weight: 600;
+}
+.related-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  background-color: #919090;
+  border-radius: 7px;
+}
+.product-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.product-price {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.discount-banner {
+  background-color: #005ADE;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.discount-left {
+  flex-grow: 2;
+  clip-path: polygon(0 0, 40% -500%, 80% 100%, 0% 100%);
+  background-color: #007bff;
+  padding: 20px;
+}
+.discount-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.discount-text {
+  font-size: 0.9rem;
+}
+.shop-now-button {
+  background-color: #FF9017;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
 
 
