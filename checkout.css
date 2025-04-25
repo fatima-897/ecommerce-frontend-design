@@ -207,6 +207,103 @@
   }
 
   /* ---------------------------- */
+  /* Calculation Section   */
+  /* ---------------------------- */
+
+  .calculation-box{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+  }
+
+  .subtotal , .discount , .tax , .total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .total{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .checkout{
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #00B517;
+    color: #fff;
+    padding: 12px 0;
+    width: 230px;
+  }
+
+  /* ---------------------------- */
+  /* Services Box  */
+  /* ---------------------------- */
+  .serv-box{
+    display: flex;
+  }
+  .service-icon{
+    background-color: #DEE2E7;
+    padding:12px 17px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .serv-box-text{
+    display: inline-block;
+  }
+  .titel{
+    margin-bottom: 0;
+  }
+
+ .details{
+    color: #8b96a5;
+    margin-bottom: 0;
+   }
+
+
+
+   /* ---------------------------- */
+  /* Services Box  */
+  /* ---------------------------- */
+
+.product-saved-border{
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+  .product-saved-border h5{
+    font-weight: bold;
+  }
+
+  .saved-products-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 50px;
+  }
+  .product-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #6c757d;
+  }
+  .product-price {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .move-to-cart{
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    border-radius: 8px;
+  }
+   .move-to-cart i{
+    margin-right: 5px;
+   }
+
+  /* ---------------------------- */
   /* DISCOUNT PRODUCT  */
   /* ---------------------------- */
 .discount-banner {
