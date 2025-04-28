@@ -698,8 +698,5 @@ body {
   .block-item {
       flex: 1 1 22%;
   }
-  .inquiry img{
-    max-width: 100%;
-  }
 
 }
