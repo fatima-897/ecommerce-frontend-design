@@ -1,5 +1,6 @@
 * {
   padding: 0;
+  margin: 0;
   font-family: "Arial Narrow Bold", sans-serif;
 }
 body {
@@ -637,47 +638,6 @@ body {
     text-decoration: none;
 }
 
-/* ---------------------------- */
-/* Responsive for Tablets */
-/* ---------------------------- */
-@media (max-width: 992px) {
-  .header-logo, .header-ctn {
-    float: none;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .actions {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .footer {
-    margin: 30px 25px;
-  }
-  .footer-left{
-    max-height: fit-content;
-    max-width: 150px;
-  }
-  .footer-links {
-    flex-wrap: wrap;
-  }
-  .footer-center{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 290px;
-  }
-  .footer-right {
-    flex-direction:column;
-    align-items: center;
-    text-align: center;
-  }
-  .footer-payments {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-  }
-}
 
 /* ---------------------------- */
 /* Responsive for Mobile Phones */
@@ -689,8 +649,12 @@ body {
   .actions {
     flex-direction: column;
     gap: 10px;
+  } 
+  .sale-items{
+    display: flex;
+    flex-direction: column;
   }
-   .footer-center, .footer-right {
+  .footer-center, .footer-right {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -700,4 +664,42 @@ body {
     align-items: center;
     gap: 15px;
   }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header-logo img {
+      width: 120px; 
+  }
+
+  .header-search {
+      display: flex; 
+  }
+
+  .header-ctn {
+      display: flex;
+  }
+
+  .recommend-card {
+      flex: 1 1 45%; 
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header-logo img {
+      width: 150px; 
+  }
+
+  .sale-items {
+      display: flex; 
+      justify-content: space-between; 
+  }
+
+  .block-item {
+      flex: 1 1 22%;
+  }
+  .inquiry img{
+    max-width: 100%;
+  }
+
 }
